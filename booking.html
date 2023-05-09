@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Booking</title>
+	<link rel="stylesheet" type="text/css" href="booking.css">
+    <script src="booking.js"></script>
+
+</head>
+<body>
+	<h1>Movie Booking</h1>
+
+	<form>
+		<label for="movie-select">Select a movie:</label>
+		<select id="movie-select" name="movie">
+			<option value="movie1">Movie 1</option>
+			<option value="movie2">Movie 2</option>
+			<option value="movie3">Movie 3</option>
+		</select>
+	</form>
+
+	<h2>Seat Selection</h2>
+	<table>
+		<tr>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+			<td class="seat booked"></td>
+			<td class="seat available"></td>
+		</tr>
+		<tr>
+			<td class="seat available"></td>
+			<td class="seat booked"></td>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+		</tr>
+		<tr>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+		</tr>
+		<tr>
+			<td class="seat booked"></td>
+			<td class="seat available"></td>
+			<td class="seat available"></td>
+			<td class="seat booked"></td>
+		</tr>
+	</table>
+    <button id="book-now">Book Now</button>
+</body>
+</html>
