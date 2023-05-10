@@ -5,35 +5,35 @@
     padding-top: 100px;
   }
   
-  h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .button {
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #FF5733;
-    color: #FFFFFF;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 0 20px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .button:hover {
-    background-color: #FF8C5A;
-  }
+h1 {
+font-size: 48px;
+margin-bottom: 20px;
+}
+
+p {
+font-size: 24px;
+margin-bottom: 40px;
+}
+
+.options {
+display: flex;
+justify-content: center;
+}
+
+.button {
+display: inline-block;
+padding: 15px 40px;
+background-color: #FF5733;
+color: #FFFFFF;
+font-size: 18px;
+text-align: center;
+text-decoration: none;
+border-radius: 5px;
+margin: 0 20px;
+transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+background-color: #FF8C5A;
+}
   

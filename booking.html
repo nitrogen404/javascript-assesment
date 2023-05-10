@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Movie Booking</title>
-	<link rel="stylesheet" type="text/css" href="booking.css">
-    <script src="booking.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Booking Page</title>
+    <link rel="stylesheet" href="booking.css">
+  </head>
+  <body>
+    <h1>Movie Booking Page</h1>
+    <div class="search-container">
+        <label for="search">Search by title:</label>
+        <input type="text" id="search" onkeyup="searchMovies()">
+    <ul id="movie-list"></ul>
+    </div>
+    
+    <form>
+        <label for="genre-filter">Filter by genre:</label>
+        <select id="genre-filter">
+            <option value="">All genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+        </select>
+        <label for="movie">Select a movie:</label>
+        <select id="movie" name="movie">
+            <option value="movie1">Aladin</option>
+            <option value="movie2">Social Network</option>
+        </select>
+        <br><br>
+        <div id="seating-chart"></div>
+        <br><br>
+        <input type="submit" id="book-now" value="Book Now">
+    </form>
+    
+    <p id="booked-seats"></p>
+    <p id="total-cost"></p>
+    <div id="timer"></div>  
 
-</head>
-<body>
-	<h1>Movie Booking</h1>
-
-	<form>
-		<label for="movie-select">Select a movie:</label>
-		<select id="movie-select" name="movie">
-			<option value="movie1">Movie 1</option>
-			<option value="movie2">Movie 2</option>
-			<option value="movie3">Movie 3</option>
-		</select>
-	</form>
-
-	<h2>Seat Selection</h2>
-	<table>
-		<tr>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-			<td class="seat booked"></td>
-			<td class="seat available"></td>
-		</tr>
-		<tr>
-			<td class="seat available"></td>
-			<td class="seat booked"></td>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-		</tr>
-		<tr>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-		</tr>
-		<tr>
-			<td class="seat booked"></td>
-			<td class="seat available"></td>
-			<td class="seat available"></td>
-			<td class="seat booked"></td>
-		</tr>
-	</table>
-    <button id="book-now">Book Now</button>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
